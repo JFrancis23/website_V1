@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Anek Odia", sans-serif;
+  background-color: #2d2e39;
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b394b;
+  padding-left: 20px;
+}
+h1 {
+  font-size: 60px;
+  width: 200px;
+  padding-left: 50px;
+  line-height: 50px;
+}
+h1::before {
+  content: "<h1>";
+  padding-right: 10px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.25);
+}
+h1::after {
+  content: "</h1>";
+  padding-left: 10px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.25);
+}
+nav {
+  margin-right: 30px;
+}
+nav::before {
+  content: "<nav>";
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.25);
+}
+nav::after {
+  content: "</nav>";
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.25);
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding-left: 30px;
+  font-size: 1em;
+}
+
+/* Main */
+main {
+  background: linear-gradient(180deg, #1b394b, #2d2e39);
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background: linear-gradient(
+    136.09deg,
+    rgba(113, 146, 194, 0.35) 2.72%,
+    rgba(167, 190, 235, 0.14) 100.21%
+  );
+  box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 30px;
+  height: 200px;
+  width: 500px;
+}
+
+.stack-icon {
+  height: 70px;
+}
